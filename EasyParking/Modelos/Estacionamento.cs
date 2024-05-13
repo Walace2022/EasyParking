@@ -3,10 +3,16 @@ namespace EasyParking.Modelos;
 
 internal class Estacionamento
 {
-    public decimal precoInicial { get; set; }
-    public decimal precoPorHora { get; set; }
+    private decimal precoInicial { get; set; }
+    private decimal precoPorHora { get; set; }
     private List<string> Veiculos = new List<string>();
-    
+
+    public Estacionamento(decimal Inicial, decimal PorHora)
+    {
+        precoInicial = Inicial ;
+        precoPorHora = PorHora;
+    }
+
     public void AdicionarVeiculo(string veiculo)
     {
         Veiculos.Add(veiculo);

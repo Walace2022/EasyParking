@@ -1,7 +1,14 @@
 ﻿using EasyParking.Menus;
 using EasyParking.Modelos;
 
-Estacionamento estacionamento = new Estacionamento();
+Console.WriteLine("Seja bem vindo ao sistema de estacionamento!\n" +
+                  "Digite o preço inicial:");
+decimal precoInicial = Convert.ToDecimal(Console.ReadLine());
+
+Console.WriteLine("Agora digite o preço por hora:");
+decimal precoPorHora = Convert.ToDecimal(Console.ReadLine());
+
+Estacionamento estacionamento = new Estacionamento(precoInicial,precoPorHora);
 
 Dictionary<int , Menu> Menus = new Dictionary<int , Menu>();
 Menus.Add(1, new MenuAdicionarVeiculo());
