@@ -22,15 +22,15 @@ internal class Estacionamento
     {
         if (Veiculos.Contains(veiculo))
         {
-            Console.Write("Quantas horas o veiculo ficou no estacionamento? ");
+            Console.Write("Quantas horas o veículo ficou no estacionamento? ");
             int horas = int.Parse(Console.ReadLine()!);
             Veiculos.Remove(veiculo);
-            Console.WriteLine($"\nO veiculo de placa {veiculo} foi removido.");
+            Console.WriteLine($"\nO veículo de placa {veiculo} foi removido.");
             Console.WriteLine($"O valor total é de {horas * precoPorHora + precoInicial}");
         }
         else
         {
-            Console.WriteLine("O veiculo informado não está no estacionamento.");
+            Console.WriteLine("O veículo informado não está no estacionamento.");
         }
     }
 

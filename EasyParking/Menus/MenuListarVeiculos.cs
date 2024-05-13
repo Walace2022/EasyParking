@@ -7,7 +7,7 @@ internal class MenuListarVeiculos : Menu
     public override void Executar(Estacionamento estacionamento)
     {
         base.Executar(estacionamento);
-        ExibirTituloDoMenu("Lista de Veiculos");
+        ExibirTituloDoMenu("Lista de Veículos");
         estacionamento.ListarVeiculos();
         VoltarParaMenuPrincipal();
     }

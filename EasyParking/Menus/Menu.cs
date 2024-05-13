@@ -15,7 +15,7 @@ internal class Menu
 
     public void VoltarParaMenuPrincipal()
     {
-        Console.WriteLine("Clique qualquer tecla pra voltar ao Menu Principal.");
+        Console.WriteLine("Pressione qualquer tecla para voltar ao Menu Principal.");
         Console.ReadKey();
         Console.Clear();
     }

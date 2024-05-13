@@ -7,8 +7,8 @@ internal class MenuAdicionarVeiculo : Menu
     public override void Executar(Estacionamento estacionamento)
     {
         base.Executar(estacionamento);
-        ExibirTituloDoMenu("Adicione um Veiculo");
-        Console.Write("Digite a placa do veiculo a ser adicionado: ");
+        ExibirTituloDoMenu("Adicione um Veículo");
+        Console.Write("Digite a placa do veículo a ser adicionado: ");
         string placa = Console.ReadLine()!;
         estacionamento.AdicionarVeiculo(placa);
         VoltarParaMenuPrincipal();

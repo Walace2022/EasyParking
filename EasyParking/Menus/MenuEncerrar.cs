@@ -8,6 +8,6 @@ internal class MenuEncerrar : Menu
     public override void Executar(Estacionamento estacionamento)
     {
         base.Executar(estacionamento);
-        Console.WriteLine("Obrigado por usar o EasyParking.");
+        ExibirTituloDoMenu("Obrigado por usar o EasyParking.");
     }
 }
