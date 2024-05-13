@@ -9,7 +9,7 @@ internal class Estacionamento
 
     public Estacionamento(decimal Inicial, decimal PorHora)
     {
-        precoInicial = Inicial ;
+        precoInicial = Inicial;
         precoPorHora = PorHora;
     }
 
@@ -36,10 +36,18 @@ internal class Estacionamento
 
     public void ListarVeiculos()
     {
-        Console.WriteLine("Veiculos Cadastrados no Estacionamento");
-        foreach (string veiculo in Veiculos)
+        if (Veiculos.Any())
         {
-            Console.WriteLine($" - {veiculo}");
+            Console.WriteLine("Veículos Cadastrados no Estacionamento");
+            foreach (string veiculo in Veiculos)
+            {
+                Console.WriteLine($" - {veiculo}");
+            }
+
+        }
+        else
+        {
+            Console.WriteLine("Não há veículos estacionados.");
         }
     }
 }
