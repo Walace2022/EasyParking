@@ -14,7 +14,18 @@ internal class Estacionamento
 
     public void RemoverVeiculo(string veiculo)
     {
-        Veiculos.Remove(veiculo);
+        if (Veiculos.Contains(veiculo))
+        {
+            Console.Write("Quantas horas o veiculo ficou no estacionamento? ");
+            int horas = int.Parse(Console.ReadLine()!);
+            Veiculos.Remove(veiculo);
+            Console.WriteLine($"\nO veiculo de placa {veiculo} foi removido.");
+            Console.WriteLine($"O valor total é de {horas * precoPorHora + precoInicial}");
+        }
+        else
+        {
+            Console.WriteLine("O veiculo informado não está no estacionamento.");
+        }
     }
 
     public void ListarVeiculos()
