@@ -13,6 +13,13 @@ internal class Menu
         Console.WriteLine(detalhe + "\n");
     }
 
+    public void VoltarParaMenuPrincipal()
+    {
+        Console.WriteLine("Clique qualquer tecla pra voltar ao Menu Principal.");
+        Console.ReadKey();
+        Console.Clear();
+    }
+
     public virtual void Executar(Estacionamento estacionamento)
     {
         Console.Clear();
