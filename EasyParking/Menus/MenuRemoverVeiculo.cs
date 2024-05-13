@@ -11,7 +11,7 @@ internal class MenuRemoverVeiculo : Menu
         ExibirTituloDoMenu("Remova um Veiculo");
         Console.Write("Digite a placa do veiculo a ser removido: ");
         string placa = Console.ReadLine()!;
-        estacionamento.RemoverVeiculos(placa);
+        estacionamento.RemoverVeiculo(placa);
         VoltarParaMenuPrincipal();
     }
 }

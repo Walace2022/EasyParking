@@ -10,7 +10,7 @@ internal class MenuAdicionarVeiculo : Menu
         ExibirTituloDoMenu("Adicione um Veiculo");
         Console.Write("Digite a placa do veiculo a ser adicionado: ");
         string placa = Console.ReadLine()!;
-        estacionamento.AdicionarVeiculos(placa);
+        estacionamento.AdicionarVeiculo(placa);
         VoltarParaMenuPrincipal();
     }
 }

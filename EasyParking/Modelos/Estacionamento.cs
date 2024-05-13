@@ -7,12 +7,12 @@ internal class Estacionamento
     public decimal precoPorHora { get; set; }
     private List<string> Veiculos = new List<string>();
     
-    public void AdicionarVeiculos(string veiculo)
+    public void AdicionarVeiculo(string veiculo)
     {
         Veiculos.Add(veiculo);
     }
 
-    public void RemoverVeiculos(string veiculo)
+    public void RemoverVeiculo(string veiculo)
     {
         Veiculos.Remove(veiculo);
     }
